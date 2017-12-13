@@ -41,6 +41,13 @@ class WithdrawController extends Controller
         $data['basic'] = BasicSetting::first();
         $data['page_title'] = "User Withdraw Method";
         $data['method'] = ManualPayment::whereStatus(1)->get();
+		
+		$data['member'] = User::findOrFail(Auth::user()->id);
+		
+		$data['namew'] = $data['member']-> ID_Number;
+		$data['withdrawalcnt'] = '';
+		
+		$data['withdrawalcnt'] = DB::select("select * from users where ID_Number = ?", [ $data['namew'] ]);
         return view('withdraw.withdraw-new',$data);
     }
     public function checkAmount(Request $request)
@@ -102,6 +109,13 @@ class WithdrawController extends Controller
         $data['page_title'] = "User Withdraw Preview";
         $data['method'] = ManualPayment::findOrFail($request->method_id);
         $data['amount'] = $request->amount;
+		
+		$data['member'] = User::findOrFail(Auth::user()->id);
+		
+		$data['namew'] = $data['member']-> ID_Number;
+		$data['withdrawalcnt'] = '';
+		
+		$data['withdrawalcnt'] = DB::select("select * from users where ID_Number = ?", [ $data['namew'] ]);
         return view('withdraw.withdraw-preview',$data);
     }
     public function submitWithdraw(Request $request)
@@ -185,6 +199,13 @@ class WithdrawController extends Controller
         $data['basic'] = BasicSetting::first();
         $data['page_title'] = "User Withdraw History";
         $data['withdraw'] = Withdraw::whereUser_id(Auth::user()->id)->orderBy('id','DESC')->get();
+		
+		$data['member'] = User::findOrFail(Auth::user()->id);
+		
+		$data['namew'] = $data['member']-> ID_Number;
+		$data['withdrawalcnt'] = '';
+		
+		$data['withdrawalcnt'] = DB::select("select * from users where ID_Number = ?", [ $data['namew'] ]);
         return view('withdraw.withdraw-history',$data);
     }
 

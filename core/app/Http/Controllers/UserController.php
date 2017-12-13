@@ -104,6 +104,13 @@ class UserController extends Controller
         $data['basic'] = BasicSetting::first();
         $data['page_title'] = "User Add Fund";
         $data['payment'] = Payment::first();
+		
+		$data['member'] = User::findOrFail(Auth::user()->id);
+		
+		$data['namew'] = $data['member']-> ID_Number;
+		$data['withdrawalcnt'] = '';
+		
+		$data['withdrawalcnt'] = DB::select("select * from users where ID_Number = ?", [ $data['namew'] ]);
         return view('user.fund-add',$data);
     }
     public function historyFund()
@@ -114,6 +121,13 @@ class UserController extends Controller
         $user_id = Auth::user()->id;
         $data['fund'] = Fund::whereUser_id($user_id)->orderBy('id','DESC')->get();
         $data['basic'] = BasicSetting::first();
+		
+		$data['member'] = User::findOrFail(Auth::user()->id);
+		
+		$data['namew'] = $data['member']-> ID_Number;
+		$data['withdrawalcnt'] = '';
+		
+		$data['withdrawalcnt'] = DB::select("select * from users where ID_Number = ?", [ $data['namew'] ]);
         return view('user.fund-history',$data);
     }
     public function newDeposit()
@@ -124,6 +138,13 @@ class UserController extends Controller
         $data['page_title'] = "User New Invest";
         $data['payment'] = Payment::first();
         $data['plan'] = Plan::whereStatus(1)->get();
+		
+		$data['member'] = User::findOrFail(Auth::user()->id);
+		
+		$data['namew'] = $data['member']-> ID_Number;
+		$data['withdrawalcnt'] = '';
+		
+		$data['withdrawalcnt'] = DB::select("select * from users where ID_Number = ?", [ $data['namew'] ]);
         return view('user.deposit-new',$data);
     }
     public function postDeposit(Request $request)
@@ -139,6 +160,13 @@ class UserController extends Controller
         $data['page_title'] = "User Invest Preview";
         $data['payment'] = Payment::first();
         $data['plan'] = Plan::findOrFail($request->id);
+		
+		$data['member'] = User::findOrFail(Auth::user()->id);
+		
+		$data['namew'] = $data['member']-> ID_Number;
+		$data['withdrawalcnt'] = '';
+		
+		$data['withdrawalcnt'] = DB::select("select * from users where ID_Number = ?", [ $data['namew'] ]);
         return view('user.deposit-preview',$data);
 
     }
@@ -328,6 +356,13 @@ class UserController extends Controller
         $data['page_title'] = "Add Fund Preview";
         $data['payment'] = Payment::first();
         $data['fund'] = $fund;
+		
+		$data['member'] = User::findOrFail(Auth::user()->id);
+		
+		$data['namew'] = $data['member']-> ID_Number;
+		$data['withdrawalcnt'] = '';
+		
+		$data['withdrawalcnt'] = DB::select("select * from users where ID_Number = ?", [ $data['namew'] ]);
         return view('user.fund-preview',$data);
     }
     public function stripePreview(Request $request)
@@ -342,6 +377,13 @@ class UserController extends Controller
         $data['page_title'] = "Card Preview";
         $data['payment_type'] = 4;
         $data['payment'] = Payment::first();
+		
+		$data['member'] = User::findOrFail(Auth::user()->id);
+		
+		$data['namew'] = $data['member']-> ID_Number;
+		$data['withdrawalcnt'] = '';
+		
+		$data['withdrawalcnt'] = DB::select("select * from users where ID_Number = ?", [ $data['namew'] ]);
         return view('user.stripe-preview',$data);
     }
     public function submitStripe(Request $request)
@@ -526,6 +568,13 @@ class UserController extends Controller
         $data['btc'] = $usd;
         $data['add'] = $sendto;
         $data['fund'] = $tran;
+		
+		$data['member'] = User::findOrFail(Auth::user()->id);
+		
+		$data['namew'] = $data['member']-> ID_Number;
+		$data['withdrawalcnt'] = '';
+		
+		$data['withdrawalcnt'] = DB::select("select * from users where ID_Number = ?", [ $data['namew'] ]);
         return view('user.btc-send',$data);
     }
     public function depositSubmit(Request $request)
@@ -652,6 +701,13 @@ class UserController extends Controller
         $data['basic'] = BasicSetting::first();
         $data['page_title'] = "User Deposit History";
         $data['deposit'] = Deposit::whereUser_id(Auth::user()->id)->orderBy('id','DESC')->get();
+		
+		$data['member'] = User::findOrFail(Auth::user()->id);
+		
+		$data['namew'] = $data['member']-> ID_Number;
+		$data['withdrawalcnt'] = '';
+		
+		$data['withdrawalcnt'] = DB::select("select * from users where ID_Number = ?", [ $data['namew'] ]);
         return view('user.deposit-history',$data);
     }
     public function repeatHistory()
@@ -661,6 +717,13 @@ class UserController extends Controller
         $data['basic'] = BasicSetting::first();
         $data['page_title'] = "User Profit History";
         $data['deposit'] = Deposit::whereUser_id(Auth::user()->id)->orderBy('id','DESC')->paginate(9);
+		
+		$data['member'] = User::findOrFail(Auth::user()->id);
+		
+		$data['namew'] = $data['member']-> ID_Number;
+		$data['withdrawalcnt'] = '';
+		
+		$data['withdrawalcnt'] = DB::select("select * from users where ID_Number = ?", [ $data['namew'] ]);
         return view('user.repeat-history',$data);
     }
     public function repeatTable($id)
@@ -670,6 +733,13 @@ class UserController extends Controller
         $data['basic'] = BasicSetting::first();
         $data['page_title'] = "User Profit Table";
         $data['repeat'] = RebeatLog::whereDeposit_id($id)->whereUser_id(Auth::user()->id)->orderBy('id','ASC')->get();
+		
+		$data['member'] = User::findOrFail(Auth::user()->id);
+		
+		$data['namew'] = $data['member']-> ID_Number;
+		$data['withdrawalcnt'] = '';
+		
+		$data['withdrawalcnt'] = DB::select("select * from users where ID_Number = ?", [ $data['namew'] ]);
         return view('user.repeat-table',$data);
     }
     public function referenceUser()
@@ -679,6 +749,13 @@ class UserController extends Controller
         $data['basic'] = BasicSetting::first();
         $data['page_title'] = "Reference User";
         $data['user'] = User::whereUnder_reference(Auth::user()->reference)->orderBy('id','desc')->get();
+		
+		$data['member'] = User::findOrFail(Auth::user()->id);
+		
+		$data['namew'] = $data['member']-> ID_Number;
+		$data['withdrawalcnt'] = '';
+		
+		$data['withdrawalcnt'] = DB::select("select * from users where ID_Number = ?", [ $data['namew'] ]);
         return view('user.reference-user',$data);
     }
     public function referenceHistory()
@@ -688,6 +765,13 @@ class UserController extends Controller
         $data['basic'] = BasicSetting::first();
         $data['page_title'] = "Reference Bonus History";
         $data['bonus'] = Reference::whereUser_id(Auth::user()->id)->orderBy('id','desc')->get();
+		
+		$data['member'] = User::findOrFail(Auth::user()->id);
+		
+		$data['namew'] = $data['member']-> ID_Number;
+		$data['withdrawalcnt'] = '';
+		
+		$data['withdrawalcnt'] = DB::select("select * from users where ID_Number = ?", [ $data['namew'] ]);
         return view('user.reference-history',$data);
     }
     
@@ -731,6 +815,13 @@ class UserController extends Controller
         $data['basic'] = BasicSetting::first();
         $data['page_title'] = "User All Activity";
         $data['activity'] = UserBalance::whereUser_id(Auth::user()->id)->orderBy('id','desc')->get();
+		
+		$data['member'] = User::findOrFail(Auth::user()->id);
+		
+		$data['namew'] = $data['member']-> ID_Number;
+		$data['withdrawalcnt'] = '';
+		
+		$data['withdrawalcnt'] = DB::select("select * from users where ID_Number = ?", [ $data['namew'] ]);
         return view('user.user-activity',$data);
     }
     public function editUser()
@@ -740,6 +831,12 @@ class UserController extends Controller
         $data['basic'] = BasicSetting::first();
         $data['page_title'] = "User Details Update ";
         $data['member'] = User::findOrFail(Auth::user()->id);
+		
+		$data['namew'] = $data['member']-> ID_Number;
+		$data['withdrawalcnt'] = '';
+		
+		$data['withdrawalcnt'] = DB::select("select * from users where ID_Number = ?", [ $data['namew'] ]);
+		
         return view('user.user-edit',$data);
     }
     public function updateUser(Request $request,$id)
@@ -835,6 +932,13 @@ class UserController extends Controller
         }else{
             $data['hit'] = 0;
         }
+		
+		$data['member'] = User::findOrFail(Auth::user()->id);
+		
+		$data['namew'] = $data['member']-> ID_Number;
+		$data['withdrawalcnt'] = '';
+		
+		$data['withdrawalcnt'] = DB::select("select * from users where ID_Number = ?", [ $data['namew'] ]);
         return view('user.deposit-auto-preview',$data);
     }
 
@@ -845,6 +949,13 @@ class UserController extends Controller
         $data['basic'] = BasicSetting::first();
         $data['page_title'] = "Fund Add via Bank";
         $data['bank'] = ManualBank::whereStatus(1)->get();
+		
+		$data['member'] = User::findOrFail(Auth::user()->id);
+		
+		$data['namew'] = $data['member']-> ID_Number;
+		$data['withdrawalcnt'] = '';
+		
+		$data['withdrawalcnt'] = DB::select("select * from users where ID_Number = ?", [ $data['namew'] ]);
         return view('bank.manual-fund',$data);
     }
     public function fundAddCheck(Request $request)
@@ -893,6 +1004,13 @@ class UserController extends Controller
         $data['page_title'] = "Bank Fund Add Preview";
         $data['fund'] = ManualFundLog::create($mu);
         $data['method'] = $bank;
+		
+		$data['member'] = User::findOrFail(Auth::user()->id);
+		
+		$data['namew'] = $data['member']-> ID_Number;
+		$data['withdrawalcnt'] = '';
+		
+		$data['withdrawalcnt'] = DB::select("select * from users where ID_Number = ?", [ $data['namew'] ]);
         return view('bank.manual-fund-preview',$data);
     }
     public function submitManualFund(Request $request)
@@ -929,6 +1047,13 @@ class UserController extends Controller
         $data['basic'] = BasicSetting::first();
         $data['page_title'] = "Bank Fund Add History";
         $data['fund'] = ManualFund::whereUser_id(Auth::user()->id)->orderBy('id','desc')->get();
+		
+		$data['member'] = User::findOrFail(Auth::user()->id);
+		
+		$data['namew'] = $data['member']-> ID_Number;
+		$data['withdrawalcnt'] = '';
+		
+		$data['withdrawalcnt'] = DB::select("select * from users where ID_Number = ?", [ $data['namew'] ]);
         return view('bank.manual-fund-history',$data);
     }
     public function manualFundAddDetails($id)
@@ -939,6 +1064,13 @@ class UserController extends Controller
         $data['page_title'] = "Bank Payment Request";
         $data['fund'] = ManualFund::findOrFail($id);
         $data['img'] = Photo::whereFund_id($id)->get();
+		
+		$data['member'] = User::findOrFail(Auth::user()->id);
+		
+		$data['namew'] = $data['member']-> ID_Number;
+		$data['withdrawalcnt'] = '';
+		
+		$data['withdrawalcnt'] = DB::select("select * from users where ID_Number = ?", [ $data['namew'] ]);
         return view('bank.manual-payment-request-view',$data);
     }
 	
