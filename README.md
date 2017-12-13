@@ -1,54 +1,54 @@
 # Laravel-Investment-System
 Laravel Investment System
 
-Its Fully Responsive & Dynamic Investment System Made with Laravel Framework. 
-Now Its Easy to Create your own Currency Investment Platform. 
-ts Just a Matter of five minutes to start your own Investment website. 
+Its Fully Responsive & Dynamic Investment System Made with Laravel Framework. <br>
+Now Its Easy to Create your own Currency Investment Platform. <br>
+ts Just a Matter of five minutes to start your own Investment website. <br>
 
-#Server Type: Linux
-PHP Version: 5.5.9
-mySQL Version: 5x
+#Server Type: Linux<br>
+PHP Version: 5.5.9<br>
+mySQL Version: 5x<br>
 
-User Features:
+<h3>User Features:</h3>
 
-⚝ Fully Responsive Design.
-⚝ Easy Signup & Signin.
-⚝ High Secure User Dashboard.
-⚝ ANTI-FRAUD Registration System.
-⚝ Informative USER Panel.
-⚝ Total Deposite History.
-⚝ Total Earning History.
-⚝ Total Profit History.
-⚝ A to Z Activity Logs.
-⚝ Automated Add Fund System.
-⚝ Add Fund Via Bank.
-⚝ A to Z Fund Add Report.
-⚝ Manage Investment.
-⚝ Investment History.
-⚝ Profit History.
+⚝ Fully Responsive Design.<br>
+⚝ Easy Signup & Signin.<br>
+⚝ High Secure User Dashboard.<br>
+⚝ ANTI-FRAUD Registration System.<br>
+⚝ Informative USER Panel.<br>
+⚝ Total Deposite History.<br>
+⚝ Total Earning History.<br>
+⚝ Total Profit History.<br>
+⚝ A to Z Activity Logs.<br>
+⚝ Automated Add Fund System.<br>
+⚝ Add Fund Via Bank.<br>
+⚝ A to Z Fund Add Report.<br>
+⚝ Manage Investment.<br>
+⚝ Investment History.<br>
+⚝ Profit History.<br>
 
 
 
-Admin Features:
+<h3>Admin Features:</h3><br>
 
-⚝ A to Z Dynamic Admin Panel.
-⚝ 100% Secure Login.
-⚝ Investment Plan Management.
-⚝ WithDraw Method Management.
-⚝ Activity Logs Management.
-⚝ Total Withdraw History.
-⚝ A to Z Deposite History.
-⚝ Total Profit History.
-⚝ Bank Account Management.
-⚝ Unlimited Bank Account.
-⚝ Total USER Management.
-⚝ Block / Unblock Facility.
-⚝ Payment Method Management.
-⚝ NewsLetter Management.
-⚝ Investment compound management.
+⚝ A to Z Dynamic Admin Panel.<br>
+⚝ 100% Secure Login.<br>
+⚝ Investment Plan Management.<br>
+⚝ WithDraw Method Management.<br>
+⚝ Activity Logs Management.<br>
+⚝ Total Withdraw History.<br>
+⚝ A to Z Deposite History.<br>
+⚝ Total Profit History.<br>
+⚝ Bank Account Management.<br>
+⚝ Unlimited Bank Account.<br>
+⚝ Total USER Management.<br>
+⚝ Block / Unblock Facility.<br>
+⚝ Payment Method Management.<br>
+⚝ NewsLetter Management.<br>
+⚝ Investment compound management.<br>
 
-# HOW TO INSTALL
-Step1: Upload Files.zip to your host and unzip.
-Step2: Create mySQL Database and upload SQL.sql (From Database Folder).
-Step3: Goto File Manager and Copy Paste Database Information at ../core/.env File.
-Step4: Now Run your Website.
+# <h3>HOW TO INSTALL</h3>
+Step1: Upload Files.zip to your host and unzip.<br>
+Step2: Create mySQL Database and upload SQL.sql (From Database Folder).<br>
+Step3: Goto File Manager and Copy Paste Database Information at ../core/.env File.<br>
+Step4: Now Run your Website.<br>
