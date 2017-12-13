@@ -1,5 +1,6 @@
 # Laravel-Investment-System
-Laravel Investment System
+Laravel Investment System <br>
+The Laravel framework version 5.4.25 <br>
 
 Its Fully Responsive & Dynamic Investment System Made with Laravel Framework. <br>
 Now Its Easy to Create your own Currency Investment Platform. <br>
