@@ -29,7 +29,7 @@ mySQL Version: 5x<br>
 
 
 
-<h3>Admin Features:</h3><br>
+<h3>Admin Features:</h3>
 
 ⚝ A to Z Dynamic Admin Panel.<br>
 ⚝ 100% Secure Login.<br>
