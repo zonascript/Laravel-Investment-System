@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/guzzlehttp/guzzle/src" isTestSource="false" packagePrefix="GuzzleHttp" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/psy/psysh/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/mockery/mockery/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/phpspec/prophecy/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/nesbot/carbon/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/fzaninotto/faker/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/doctrine/inflector/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/intervention/image/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/doctrine/instantiator/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/laravel/framework/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/hamcrest/hamcrest-php/hamcrest" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/monolog/monolog/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/phpspec/prophecy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/nikic/php-parser/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/vlucas/phpdotenv/src" isTestSource="false" packagePrefix="Dotenv" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/monolog/monolog/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/mockery/mockery/tests/Mockery/Test" isTestSource="true" packagePrefix="Mockery" />
+      <sourceFolder url="file://$MODULE_DIR$/core" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/jakub-onderka/php-console-highlighter/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/hamcrest/hamcrest-php/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/doctrine/inflector/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/psr/log" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/psy/psysh/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/stripe/stripe-php/lib" isTestSource="false" packagePrefix="Stripe" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/nikic/php-parser/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/fzaninotto/faker/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/doctrine/instantiator/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/myclabs/deep-copy/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/mtdowling/cron-expression/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/jakub-onderka/php-console-color/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/core/vendor/mockery/mockery/library" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="PHARS">
+        <CLASSES>
+          <root url="phar://$MODULE_DIR$/core/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.0.phar/" />
+        </CLASSES>
+        <SOURCES>
+          <root url="phar://$MODULE_DIR$/core/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.0.phar/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>
