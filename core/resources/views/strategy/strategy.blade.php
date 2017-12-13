@@ -16,7 +16,7 @@
             <th>Strategy Title</th>
             <th>Strategy Image</th>
             <th>Strategy Description</th>
-            <th>Action</th>
+            <th>Documentation</th>
         </tr>
         </thead>
         <tbody>

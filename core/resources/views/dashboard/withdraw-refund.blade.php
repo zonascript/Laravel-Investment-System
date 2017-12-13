@@ -37,7 +37,7 @@
             <th>Amount</th>
             <th>Refund Date</th>
             <th>Status</th>
-            <th>Action</th>
+            <th>Documentation</th>
         </tr>
         </thead>
         <tbody>

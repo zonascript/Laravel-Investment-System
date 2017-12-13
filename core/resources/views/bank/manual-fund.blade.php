@@ -12,7 +12,7 @@
 
                 <!-- panel head -->
                 <div class="panel-heading">
-                    <div class="panel-title"><i class="fa fa-send"></i> <strong>{{ $page_title }}</strong></div>
+                    <div class="panel-title"><i class="fa fa-send"></i> <strong> Add Deposit via Bank</strong></div>
 
                 </div>
 

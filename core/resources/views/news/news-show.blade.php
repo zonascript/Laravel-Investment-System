@@ -30,7 +30,7 @@
             <th>Category</th>
             <th>Description</th>
             <th>Created Date</th>
-            <th>Action</th>
+            <th>Documentation</th>
         </tr>
         </thead>
         <tbody>

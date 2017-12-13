@@ -38,7 +38,7 @@
             <th>Charge</th>
             <th>Total</th>
             <th>Status</th>
-            <th>Action</th>
+            <th>Documentation</th>
         </tr>
         </thead>
         <tbody>

@@ -967,7 +967,7 @@ class UserController extends Controller
 
         if ($request->amount < $bank->minimum or $request->amount > $bank->maximum){
             return '<div class="col-sm-7 col-sm-offset-4">
-                <div class="alert alert-warning"><i class="fa fa-times"></i> You can\'t Add This Fund. Contact Administrator</div>
+                <div class="alert alert-warning"><i class="fa fa-times"></i> You can not add this Amount</div>
             </div>
             <div class="col-sm-7 col-sm-offset-4">
                 <button type="button" class="btn btn-info btn-block btn-icon btn-lg icon-left delete_button disabled"
@@ -978,7 +978,7 @@ class UserController extends Controller
         }
         else{
             return '<div class="col-sm-7 col-sm-offset-4">
-                <div class="alert alert-success"><i class="fa fa-check"></i> Well Done. You Can add This Fund.</div>
+                <div class="alert alert-success"><i class="fa fa-check"></i> Well Done. You Can add This Deposit.</div>
             </div>
             <div class="col-sm-7 col-sm-offset-4">
                 <button type="submit" class="btn btn-info btn-block btn-icon btn-lg icon-left delete_button"
@@ -1001,7 +1001,7 @@ class UserController extends Controller
         $data['general'] = GeneralSetting::first();
         $data['site_title'] = $data['general']->title;
         $data['basic'] = BasicSetting::first();
-        $data['page_title'] = "Bank Fund Add Preview";
+        $data['page_title'] = "Bank Deposits Preview";
         $data['fund'] = ManualFundLog::create($mu);
         $data['method'] = $bank;
 		
@@ -1034,7 +1034,7 @@ class UserController extends Controller
                 Photo::create($image);
             }
         }
-        session()->flash('message', 'Bank Fund Request Successfully Completed.');
+        session()->flash('message', 'Request Successfully Completed.');
         Session::flash('title', 'Success');
         Session::flash('type', 'success');
         return redirect()->back();

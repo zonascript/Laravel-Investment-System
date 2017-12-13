@@ -37,7 +37,7 @@
             <th>Amount</th>
             <th>Success Date</th>
             <th>Status</th>
-            <th>Action</th>
+            <th>Documentation</th>
         </tr>
         </thead>
         <tbody>

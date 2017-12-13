@@ -29,7 +29,7 @@
             <th>Name</th>
             <th>Image</th>
             <th>Created Date</th>
-            <th>Action</th>
+            <th>Documentation</th>
         </tr>
         </thead>
         <tbody>

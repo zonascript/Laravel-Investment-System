@@ -23,7 +23,7 @@
             <th>Limit</th>
             <th>Charge</th>
             <th>Status</th>
-            <th>Action</th>
+            <th>Documentation</th>
         </tr>
         </thead>
         <tbody id="tasks-list" name="tasks-list">

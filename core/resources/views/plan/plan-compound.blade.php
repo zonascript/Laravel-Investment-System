@@ -10,7 +10,7 @@
             <th>No</th>
             <th>Compound Name</th>
             <th>Compound Value</th>
-            <th>Action</th>
+            <th>Documentation</th>
         </tr>
         </thead>
         <tbody id="tasks-list" name="tasks-list">

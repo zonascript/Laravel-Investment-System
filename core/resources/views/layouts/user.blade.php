@@ -76,26 +76,26 @@
                 <li class="{{ Request::is('user-dashboard') ? " opened active" : "" }}">
                     <a href="{{ route('user-dashboard') }}">
                         <i class="entypo-gauge"></i>
-                        <span class="title">Dashboard</span>
+                        <span class="title">Statement</span>
                     </a>
 
                 </li>
 
                 <li class="has-sub">
                     <a href="#">
-                        <span class="title"><i class="fa fa-money"></i> Manage Fund</span>
+                        <span class="title"><i class="fa fa-money"></i> Deposits</span>
                     </a>
                     <ul>
 
                         <li>
                             <a href="{{ route('manual-fund-add') }}">
                                 <i class="fa fa-bank"></i>
-                                <span class="title">Add Fund</span>
+                                <span class="title">Add Deposit</span>
                             </a>
                         </li>
                         <li>
                             <a href="{{ route('manual-fund-history') }}">
-                                <span class="title"><i class="fa fa-history"></i> Funding History</span>
+                                <span class="title"><i class="fa fa-history"></i> Deposit History</span>
                             </a>
                         </li>
 
@@ -105,7 +105,7 @@
 
                 <li class="has-sub">
                     <a href="#">
-                        <span class="title"><i class="fa fa-reply-all"></i> Manage Withdrawal</span>
+                        <span class="title"><i class="fa fa-reply-all"></i> Withdrawals</span>
                     </a>
                     <ul>
                         <li>

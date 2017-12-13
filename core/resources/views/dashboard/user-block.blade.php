@@ -37,7 +37,7 @@
             <th>Email</th>
             <th>Current Amount</th>
             <th>Block At</th>
-            <th>Action</th>
+            <th>Documentation</th>
         </tr>
         </thead>
         <tbody>

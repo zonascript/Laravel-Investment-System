@@ -10,7 +10,7 @@
             <th>No</th>
             <th>Category Name</th>
             <th>Total News</th>
-            <th>Action</th>
+            <th>Documentation</th>
         </tr>
         </thead>
         <tbody id="tasks-list" name="tasks-list">

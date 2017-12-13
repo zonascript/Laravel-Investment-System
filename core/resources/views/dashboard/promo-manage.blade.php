@@ -12,7 +12,7 @@
             <th>Short Text</th>
             <th>Icon</th>
             <th>Number</th>
-            <th>Action</th>
+            <th>Documentation</th>
         </tr>
         </thead>
         <tbody id="tasks-list" name="tasks-list">

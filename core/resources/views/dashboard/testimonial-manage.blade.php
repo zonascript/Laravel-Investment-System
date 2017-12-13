@@ -11,7 +11,7 @@
             <th>Name</th>
             <th>Position</th>
             <th>Description</th>
-            <th>Action</th>
+            <th>Documentation</th>
         </tr>
         </thead>
         <tbody id="tasks-list" name="tasks-list">

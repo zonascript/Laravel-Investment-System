@@ -21,7 +21,7 @@ if (!isset($_COOKIE['visited'])) { // no cookie, so probably the first time here
         <div class="col-md-12 col-sm-12">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <div class="panel-title"><strong><i class="fa fa-user"></i> Investment Statement:</strong></div>
+                    <div class="panel-title"><strong><i class="fa fa-user"></i> Statement:</strong></div>
 
                     <div class="panel-options">
                         <a href="#" data-rel="collapse"><i class="entypo-down-open"></i></a>
@@ -46,7 +46,7 @@ if (!isset($_COOKIE['visited'])) { // no cookie, so probably the first time here
                         <div class="profile-body text-center">
                             <br>
                             <h3 style="text-align: left;">User Name: {{ $member->name }}</h3>
-                            <h3 style="text-align: left;">Identity Number: {{ $member->ID_Number or '_____'}}</h3>
+                            <!--<h3 style="text-align: left;">Identity Number: {{ $member->ID_Number or '_____'}}</h3>-->
                             <h3 style="text-align: left;"><?php echo 'Current Date: '.date('j  F Y');?></h3>
 							<div class="row">
 

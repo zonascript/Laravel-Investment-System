@@ -16,11 +16,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-lg-offset-3 col-md-offset-3 col-xs-12">
-                    <div class="title_container">
-                        <h4>Login Here</h4>
-                        <span class="decor_default"></span>
-                    </div>
-
+                   
                     @if (session()->has('message'))
                         <div style="margin-top: 20px;margin-bottom: -10px;" class="alert alert-success alert-dismissable">
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -49,7 +45,7 @@
                         {!! csrf_field() !!}
 
                         <div class="input-group">
-                            <input type="email" name="email" value="{{ old('email') }}" required class="form-control" placeholder="Enter Mail id *" aria-describedby="basic-addon3">
+                            <input type="email" name="email" value="{{ old('email') }}" required class="form-control" placeholder="Enter Email Address" aria-describedby="basic-addon3">
                             <span class="input-group-addon" id="basic-addon3"><i class="fa fa-envelope-o"></i></span>
                         </div>
 

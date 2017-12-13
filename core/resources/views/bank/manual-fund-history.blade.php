@@ -19,9 +19,6 @@
             $table4.DataTable( {
                 dom: 'Bfrtip',
                 buttons: [
-                    'copyHtml5',
-                    'excelHtml5',
-                    'csvHtml5',
                     'pdfHtml5'
                 ]
             } );
@@ -34,13 +31,12 @@
             <th>No</th>
             <th>Date</th>
             <th>Transaction ID</th>
-            <th>Method Name</th>
-            <th>Amount</th>
-            <th>Charge</th>
+            <th>Payment Method</th>
+            <th>Amount</th>          
             <th>Total</th>
-            <th>Success Date</th>
+            <th>Approved Date</th>
             <th>Status</th>
-            <th>Action</th>
+            <th>Documentation</th>
         </tr>
         </thead>
         <tbody>
@@ -54,11 +50,11 @@
                 <td>{{ $p->log->transaction_id }}</td>
                 <td width="12%">{{ $p->log->method->name }}</td>
                 <td>{{ $basic->symbol }} {{ $p->log->amount }}</td>
-                <td>{{ $basic->symbol }} {{ $p->log->charge }}</td>
+               
                 <td width="12%">{{ $basic->symbol }} {{ $p->log->total }}</td>
                 <td width="10%">
                     @if($p->made_time == null)
-                        <span class="label label-success"><i class="fa fa-times"></i> Not Seen Yet.</span>
+                        <span class="label label-success"><i class="fa fa-times"></i> pending.</span>
                     @else
                         {{ \Carbon\Carbon::parse($p->made_time)->format('d-F-y h:i:s A') }}
                     @endif

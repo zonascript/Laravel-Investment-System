@@ -19,9 +19,6 @@
             $table4.DataTable( {
                 dom: 'Bfrtip',
                 buttons: [
-                    'copyHtml5',
-                    'excelHtml5',
-                    'csvHtml5',
                     'pdfHtml5'
                 ]
             } );
@@ -35,10 +32,10 @@
             <th>Date</th>
             <th>Withdraw Number</th>
             <th>Amount</th>
-            <th>Method</th>
+            <th>Withdraw Method</th>
             <th>Success Date</th>
             <th>Status</th>
-            <th>Action</th>
+            <th>Documentation</th>
         </tr>
         </thead>
         <tbody>

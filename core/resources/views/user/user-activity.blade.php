@@ -19,9 +19,6 @@
             $table4.DataTable( {
                 dom: 'Bfrtip',
                 buttons: [
-                    'copyHtml5',
-                    'excelHtml5',
-                    'csvHtml5',
                     'pdfHtml5'
                 ]
             } );
@@ -33,9 +30,9 @@
         <tr>
             <th>No</th>
             <th>Date</th>
-            <th>Balance Type</th>
+            <th>Payment Method</th>
             <th>Balance</th>
-            <th>Charge</th>
+          
             <th>Balance Details</th>
             <th>Past Balance</th>
             <th>Present Balance</th>
@@ -66,13 +63,7 @@
                     @endif
                 </td>
                 <td width="10%">{{ $p->balance }} - {{ $basic->currency }}</td>
-                <td width="9%">
-                    @if($p->charge == null)
-                        <i>Null</i>
-                    @else
-                        {{ $p->charge }} - {{ $basic->currency }}
-                    @endif
-                </td>
+
                 <td>{{ $p->details }}</td>
                 <td width="12%">{{ round($p->old_balance,3) }} - {{ $basic->currency }}</td>
                 <td width="12%">{{ round($p->new_balance,3) }} - {{ $basic->currency }}</td>

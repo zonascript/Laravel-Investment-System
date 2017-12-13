@@ -29,12 +29,10 @@
                             </div>
                         </div>
                         <div class="profile-body text-center">
-                            <button style="margin-top: 10px;" class="btn has btn-block btn-info btn-icon icon-left" data-clipboard-text="{{ $member->reference }}">
-                                <i class="fa fa-clipboard" aria-hidden="true"></i>  Copy Reference
-                            </button>
+                           <br>
                             <div class="row">
                                 <div class="col-md-12 col-sm-12">
-                                    <a href="{{ route('user-password') }}" class="btn btn-danger btn-icon icon-left btn-block"><i class="fa fa-bolt"></i> Change Password</a>
+                                    <a href="{{ route('user-password') }}" class="btn btn-info btn-icon icon-left btn-block"><i class="fa fa-bolt"></i> Change Password</a>
                                 </div>
                             </div>
                             <div class="row">
@@ -392,7 +390,7 @@
                     <div class="form-group">
 
                         <div class="col-sm-7 col-sm-offset-4">
-                            <button class="btn btn-danger btn-block btn-icon icon-left"><i class="fa fa-send"></i> Update User</button>
+                            <button class="btn btn-info btn-block btn-icon icon-left"><i class="fa fa-send"></i> Update User</button>
                         </div>
                     </div>
 

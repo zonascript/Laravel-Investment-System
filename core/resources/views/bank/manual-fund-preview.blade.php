@@ -12,7 +12,7 @@
 
                 <!-- panel head -->
                 <div class="panel-heading">
-                    <div class="panel-title"><i class="fa fa-send"></i> <strong>{{ $page_title }}</strong></div>
+                    <div class="panel-title"><i class="fa fa-send"></i> <strong></strong></div>
                 </div>
 
                 <!-- panel body -->
@@ -44,7 +44,7 @@
 
                                 <!-- panel head -->
                                 <div class="panel-heading">
-                                    <div class="panel-title"><i class="fa fa-money"></i> <strong>{{ $page_title }}</strong></div>
+                                    <div class="panel-title"><i class="fa fa-money"></i> <strong>Amount Deposited to Bank</strong></div>
                                 </div>
                                 <!-- panel body -->
                                 <div class="panel-body">
@@ -54,7 +54,7 @@
                                     <hr>
                                     <div class="row">
                                         <div class="form-group">
-                                            <label style="margin-top: 5px;font-size: 14px;" class="col-sm-4 col-sm-offset-2 text-right control-label">Submitted Amount : </label>
+                                            <label style="margin-top: 5px;font-size: 14px;" class="col-sm-4 col-sm-offset-2 text-right control-label">Deposited Amount : </label>
 
                                             <div class="col-sm-3">
                                                 <div class="input-group">
@@ -64,30 +64,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="form-group">
-                                            <label style="margin-top: 5px;font-size: 14px;" class="col-sm-4 col-sm-offset-2 text-right control-label">Charge : </label>
-
-                                            <div class="col-sm-3">
-                                                <div class="input-group">
-                                                    <input type="text" value="{{ $fund->charge }}" readonly name="charge" id="charge" class="form-control" placeholder="Enter Deposit Amount" required>
-                                                    <span class="input-group-addon red">&nbsp;<strong> {{ $basic->currency }} </strong></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-group">
-                                            <label style="margin-top: 5px;font-size: 14px;" class="col-sm-4 col-sm-offset-2 text-right control-label">Total Amount : </label>
-
-                                            <div class="col-sm-3">
-                                                <div class="input-group">
-                                                    <input type="text" value="{{ $fund->total }}" readonly name="charge" id="charge" class="form-control" placeholder="Enter Deposit Amount" required>
-                                                    <span class="input-group-addon red">&nbsp;<strong> {{ $basic->currency }} </strong></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                     <hr>
                                     <div class="row">
                                     <!-- <div class="form-group">
@@ -111,7 +88,7 @@
 
                             <!-- panel head -->
                             <div class="panel-heading">
-                                <div class="panel-title"><i class="fa fa-send"></i> <strong>Payment Send Details</strong></div>
+                                <div class="panel-title"><i class="fa fa-send"></i> <strong>Banking Details</strong></div>
                             </div>
                             <!-- panel body -->
                             <div class="panel-body">
@@ -120,7 +97,7 @@
 
                                         <!-- panel head -->
                                         <div class="panel-heading">
-                                            <div class="panel-title"><i class="fa fa-send"></i> <strong> Send Here </strong></div>
+                                            <div class="panel-title"><i class="fa fa-send"></i> <strong> Attach Proof of Deposit Here </strong></div>
                                         </div>
                                         <!-- panel body -->
                                         <div class="panel-body">
@@ -129,7 +106,7 @@
                                             <input type="hidden" name="method_id" value="{{ $fund->bank_id }}">
                                             <div class="row">
                                                 <div class="form-group">
-                                                    <label style="margin-top: 5px;font-size: 14px;" class="col-sm-4 text-right control-label">Method Name : </label>                                                    <div class="col-sm-8">
+                                                    <label style="margin-top: 5px;font-size: 14px;" class="col-sm-4 text-right control-label">Payment Method : </label>                                                    <div class="col-sm-8">
                                                         <input type="text" name="" id="" value="{{ $fund->method->name }}" class="form-control" readonly >
                                                     </div>
                                                 </div>
@@ -198,7 +175,7 @@
                                                 <div class="form-group">
 
                                                     <div class="col-sm-8 col-sm-offset-4">
-                                                        <button class="btn btn-success btn-icon icon-left btn-block"><i class="fa fa-send"></i> Submit Request</button>
+                                                        <button class="btn btn-success btn-icon icon-left btn-block"><i class="fa fa-send"></i> Send</button>
                                                     </div>
                                                 </div>
                                             </div>
